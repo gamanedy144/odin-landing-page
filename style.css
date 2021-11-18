@@ -4,8 +4,10 @@
     padding: 0;
 }
 :root{
-    --width-value: 300px;
-    --height-value: 32px;
+    /* --width-value: 300px; */
+    /* --height-value: 32px; */
+    --width-value: 15%;
+    --height-value: 2%;
 }
 body{
     display: flex;
@@ -42,6 +44,7 @@ li{
     padding: calc(var(--height-value)*4) var(--width-value);
     align-items: center;
     gap: 64px;
+    flex-wrap: wrap;
 }
 .first-left{
     flex: 1;
@@ -76,6 +79,7 @@ li{
 .first-right img{
     
     max-width: 100%;
+    min-width: 450px;
     border-radius: 8px;
 
 }
@@ -86,6 +90,7 @@ li{
     flex-direction: column;
     padding: calc(var(--height-value)*2) var(--width-value);
     text-align: center;
+
 }
 .content-second h3{
     font-size: 36px;
@@ -98,6 +103,7 @@ li{
     justify-content: center;
     gap: 64px;
     margin-bottom: calc(var(--height-value)*2);
+    flex-wrap: wrap;
 }
 .random-info-card{
     display: flex;
@@ -147,6 +153,7 @@ li{
 }
 
 .content-fourth{
+    flex: 1;
     display: flex;
     padding: calc(var(--height-value)*3) calc(var(--width-value));
     justify-content: center;
@@ -184,6 +191,8 @@ li{
     background-color: #1f2937;
     display: flex;
     justify-content: center;
+    align-content: center;
     padding: calc(var(--height-value)) var(--width-value);
     color: #E5E7EB;
+    
 }
